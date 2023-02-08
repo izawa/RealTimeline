@@ -1,7 +1,7 @@
 window.addEventListener("load", main, false);
 
 function main(e) {
-    if(location.hostname === "twitter.com") {
+    if(location.hostname === "twitter.com" && location.pathname === "home") {
 	const jsInitCheckTimer = setInterval(jsLoaded, 1000);
 	function jsLoaded() {
 	    var elements = document.querySelectorAll('span');
